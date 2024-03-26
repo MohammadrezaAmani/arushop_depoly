@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5% 64.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* font-feature-settings: "rlig" 1, "calt" 1; */
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  .step {
+    counter-increment: step;
+  }
+
+  .step:before {
+    @apply absolute w-9 h-9 bg-muted rounded-full font-mono font-medium text-center text-base inline-flex items-center justify-center -indent-px border-4 border-background;
+    @apply ml-[-50px] mt-[-4px];
+    content: counter(step);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../Data/Font/Vazir.eot");
+  src: url("../Data/Font/Vazir.woff") format("woff"),
+    url("../Data/Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Vazir !important;
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+  min-width: 1100px;
+  max-width: 2000px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blueLink {
+  color: #0fabc6;
+}
+
+/* react-elastic-carousel Styles */
+
+.rec-carousel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  position: relative !important;
+}
+
+.rec-arrow-left {
+  position: absolute;
+  background-color: #fff !important;
+  height: 100px !important;
+  border-radius: 10px 0 0 10px !important;
+  z-index: 98;
+  right: 5px !important;
+  box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
+}
+
+.rec-arrow-right {
+  position: absolute;
+  background-color: #fff !important;
+  border-radius: 0 10px 10px 0 !important;
+  height: 100px !important;
+  z-index: 98;
+  left: 5px !important;
+  box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
+}
+
+.rec-slider-container {
+  margin: 0 !important;
+}
+
+.Slides_offersItem__2WOf3 {
+  margin: 0 5px !important;
+}
+
+.rec-arrow-right:hover:enabled,
+.rec-arrow-right:focus:enabled {
+  color: #000 !important;
+}
+
+.Slides_commonContainer__1FO87 .rec-arrow-left {
+  right: 0 !important;
+}
+
+.Slides_commonContainer__1FO87 .rec-arrow-right {
+  left: 0 !important;
+}

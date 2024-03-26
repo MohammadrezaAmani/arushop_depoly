@@ -21,6 +21,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/_document.js",
+    "src/app/(other)/faq/page.jsx",
+    "src/components/digi/Sliders/SpecialOffersSlider.jsx"
+, "src/components/digi/Header.jsx", "src/components/digi/BackToTop.jsx"  ],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Vazir;
+  src: url("@/Data/Font/Vazir.eot");
+  src: url("@/Data/Font/Vazir.woff") format("woff"),
+    url("@/Data/Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Vazir !important;
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+  min-width: 1100px;
+  max-width: 2000px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blueLink {
+  color: #0fabc6;
+}
+
+/* react-elastic-carousel Styles */
+
+.rec-carousel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  position: relative !important;
+}
+
+.rec-arrow-left {
+  position: absolute;
+  background-color: #fff !important;
+  height: 100px !important;
+  border-radius: 10px 0 0 10px !important;
+  z-index: 98;
+  right: 5px !important;
+  box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
+}
+
+.rec-arrow-right {
+  position: absolute;
+  background-color: #fff !important;
+  border-radius: 0 10px 10px 0 !important;
+  height: 100px !important;
+  z-index: 98;
+  left: 5px !important;
+  box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
+}
+
+.rec-slider-container {
+  margin: 0 !important;
+}
+
+.Slides_offersItem__2WOf3 {
+  margin: 0 5px !important;
+}
+
+.rec-arrow-right:hover:enabled,
+.rec-arrow-right:focus:enabled {
+  color: #000 !important;
+}
+
+.Slides_commonContainer__1FO87 .rec-arrow-left {
+  right: 0 !important;
+}
+
+.Slides_commonContainer__1FO87 .rec-arrow-right {
+  left: 0 !important;
+}
